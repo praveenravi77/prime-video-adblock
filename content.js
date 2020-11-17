@@ -9,7 +9,7 @@
     attributeOldValue: false
   }
   
-  function skipAdd(mutations) {
+  function skipAd(mutations) {
     let videoNode = document.querySelector("#dv-web-player > div > div:nth-child(1) > div > div > div.scalingVideoContainer > div.scalingVideoContainerBottom > div > video");
     let adText = document.querySelector(".atvwebplayersdk-adtimeindicator-text");
   
@@ -21,7 +21,7 @@
     }
   }
   
-  globalThis.AmazonAdObserver = new MutationObserver(skipAdd);
+  globalThis.AmazonAdObserver = new MutationObserver(skipAd);
 
   // let nodeToWatch = document.querySelector(".atvwebplayersdk-infobar-container");
   let nodeToWatch = document.body;
