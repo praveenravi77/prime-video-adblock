@@ -10,7 +10,6 @@
   }
   
   function skipAdd(mutations) {
-    console.log(`mutations: ${mutations}`)
     let videoNode = document.querySelector("#dv-web-player > div > div:nth-child(1) > div > div > div.scalingVideoContainer > div.scalingVideoContainerBottom > div > video");
     let adText = document.querySelector(".atvwebplayersdk-adtimeindicator-text");
   
@@ -24,7 +23,8 @@
   
   globalThis.AmazonAdObserver = new MutationObserver(skipAdd);
 
-  let nodeToWatch = document.querySelector(".atvwebplayersdk-infobar-container");
+  // let nodeToWatch = document.querySelector(".atvwebplayersdk-infobar-container");
+  let nodeToWatch = document.body;
   if (nodeToWatch != null) {
     console.log("successfully attached observer")
     globalThis.AmazonAdObserver.observe(nodeToWatch, options);
