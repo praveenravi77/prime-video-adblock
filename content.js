@@ -24,7 +24,7 @@
       let afterAd = curr + adDuration;
 
       // handle back to back ad wonkyness
-      if (curr - lastAdTime > 1) {
+      if (Math.abs(curr - lastAdTime) > 1) {
         console.log("First ad");
         videoNode.currentTime = afterAd;
 
