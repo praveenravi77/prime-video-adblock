@@ -1,6 +1,6 @@
 {
   "name": "Prime Video Adblock",
-  "version": "1.0",
+  "version": "0.0.1",
   "description": "Annoyed by ads in 'Free with Ads' shows on Amazon Prime? Well you are not alone! Use this extension to get rid of those pesky ads.",
   "content_scripts": [{
     "matches": ["https://www.amazon.com/gp/video/detail*"],
